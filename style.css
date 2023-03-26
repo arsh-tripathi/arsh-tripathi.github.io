@@ -4,10 +4,15 @@
     padding: 0;
 }
 
+/* 
+------------------------------------------------------------------------------------
+Setup 
+------------------------------------------------------------------------------------
+*/
 header
 {   
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/cat.jpg);
-    background-attachment: fixed;
+    background-image: linear-gradient(rgb(27, 31, 47),rgb(27, 31, 47));
+    background-attachment: static;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -15,158 +20,313 @@ header
 
 .header_2
 {   
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/cat.jpg);
-    background-attachment: fixed;
-    height: fit-content;
+    background-image: linear-gradient(rgb(27, 31, 47),rgb(27, 31, 47));
+    background-attachment: static;
+    height: 200vh;
     background-size: cover;
     background-position: center;
 }
 
+.header_3
+{   
+    background-image: linear-gradient(rgb(27, 31, 47),rgb(27, 31, 47));
+    background-attachment: static;
+    height: 150vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: rgb(27, 31, 47);
+    border-radius: 2px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #afb5b4;
+    border-radius: 2px;
+  }
+
+/* 
+------------------------------------------------------------------------------------
+Side Bar Content 
+------------------------------------------------------------------------------------
+*/
+
+@keyframes pullout {
+    0% { opacity: 0; width: 0px;}
+    100% { opacity: 1; width: 100px;}
+}
 
 .nav-bar
 {
     background: rgb(0,0,0,0.5);
-    height: 80px;
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    animation: pullout 1s;
 }
 
 .menu
 {
-    float: right;
+    float: left;
     list-style: none;
     margin: 20px;
+    padding-top: 150px;
 }
 
 .menu li
 {
-    display: inline-block;
+    display: block;
     margin: 10px 5px;
 }
 
-.menu li a
-{
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 10px;
-    font-family: Georgia;
-    letter-spacing: 2px;
+/* 
+------------------------------------------------------------------------------------
+Sidebar Items
+------------------------------------------------------------------------------------
+*/
+
+@keyframes fadeIn {
+    0% { opacity: 0}
+    100% { opacity: 1;}
 }
 
-.menu li a:hover
-{
-    background: #fff;
-    transition: 0.4s;
-    color: #000;
+.menu #profile {
+    background-image: url("images/profile.png");
+    background-size: cover;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    width: 45px;
+    height: 45px;
+    animation: fadeIn 4s;
+    transition: all 0.4s ease;
+    border-left: 0px solid #ffffff00;
 }
 
-.dropbtn 
+.menu #profile:hover
 {
-    background-color: rgba(0,0,0,1);
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+    border-width: 2px;
+    border-color: #00fae6;
+    height: 60px;
+    width: 60px;
+    transition: all 0.4s ease;
 }
-  
-
-.dropdown 
-{
-    position: relative;
-    display: inline-block;
+.menu #mail {
+    background-image: url("images/Mail-Icon-White-on-Black.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    animation: fadeIn 4s;
+    transition: all 0.4s ease;
+    border-left: 0px solid #ffffff00;
 }
-  
 
-.dropdown-content 
+.menu #mail:hover
 {
-    display: none;
-    position: absolute;
-    background-color: #000;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    border-width: 2px;
+    border-color: #00fae6;
+    height: 60px;
+    width: 60px;
+    transition: all 0.4s ease;
 }
-  
 
-.dropdown-content a 
-{
-    color: #fff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.menu #github {
+    background-image: url("images/github-hollow.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    animation: fadeIn 4s;
+    transition: all 0.4s ease;
+    border-left: 0px solid #ffffff00;
 }
-  
 
-.dropdown-content a:hover 
+.menu #github:hover
 {
-    background-color: #fff;
-    transition: 0.4s;
-}  
-
-.dropdown:hover .dropdown-content {display: block;}
-  
-.dropdown:hover .dropbtn 
-{
-    background-color: #fff;
-    transition: 0.4s;
+    border-width: 2px;
+    border-color: #00fae6;
+    height: 60px;
+    width: 60px;
+    transition: all 0.4s ease;
 }
+
+.menu #linkedin {
+    background-image: url("images/linkedin\ symbol.png");
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    animation: fadeIn 4s;
+    padding-top: 2px;
+    padding-left: 5px;
+    transition: all 0.4s ease;
+    border-left: 0px solid #ffffff00;
+}
+
+.menu #linkedin:hover
+{
+    border-width: 2px;
+    border-color: #00fae6;
+    height: 60px;
+    width: 60px;
+    transition: all 0.4s ease;
+}
+
+/* 
+------------------------------------------------------------------------------------
+Text
+------------------------------------------------------------------------------------
+*/
 
 .welcome_text
 {
     text-decoration: none;
-    color: #fff;
-    position: relative;
-    text-align: center;
-    font: Georgia;
-    top: 160px;
+    color: #00fae6;
+    float: center;
+    text-align: left;
+    font-family: SF-Mono;
+    padding-left: 100px;
+    padding-top: 100px;
 }
+
+@keyframes fadeIntext {
+    0% { opacity: 0; padding-top: 150px;}
+    100% { opacity: 1; padding-top: 2px;}
+}
+
 
 .welcome_text h1
 {
-    font-size: 42px;
-    margin: 25px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px; 
+    animation: fadeIntext 2s;
 }
 
-.resume_list
-{
-    position: center;
+.welcome_text h2 {
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 35px; 
+    margin: 15px;
+    animation: fadeIntext 2s;
+    color: #afb5b4;
 }
 
-.resume_list li
-{
-    display: block;
-    font: Georgia;
-    text-decoration: none;
-    letter-spacing: 2px;
-    color: #fff;
+.welcome_text h2 a{
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: fadeIntext 2s;
+    color: #fed402;
 }
 
-.content h1
-{
-    color:rgba(17, 235, 115, 0.865);
-    font: Georgia;
-    letter-spacing: 2px;
-    line-height: 400%;
-    font-size: 70;
+.welcome_text h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 50px;
+    color: #00fae6;
+    animation: fadeIntext 2s;
 }
 
-.content h2
-{
-    color: rgb(28, 203, 230);
-    font: Georgia;
-    letter-spacing: 2px;
-    line-height: 300%;
+/* 
+------------------------------------------------------------------------------------
+Sidebar Items - Resume
+------------------------------------------------------------------------------------
+*/
+
+.menu #education {
+    background-image: url("images/education.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 35px;
+    animation: fadeIn 4s;
+    transition: all 0.4s ease;
+    border-left: 0px solid #ffffff00;
+    padding-bottom: 10px;
 }
 
-.content h2 a
+.menu #education:hover
 {
-    color: rgb(28, 203, 230);
-    font: Georgia;
-    letter-spacing: 2px;
-    line-height: 300%;
+    border-width: 2px;
+    border-color: #00fae6;
+    transition: all 0.4s ease;
 }
 
-.content-list li
+.menu #experience {
+    background-image: url("images/experience.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    animation: fadeIn 4s;
+    transition: all 0.4s ease;
+    border-left: 0px solid #ffffff00;
+}
+
+.menu #experience:hover
 {
-    color: #fff;
-    font: Georgia;
-    letter-spacing: 2px;
+    border-width: 2px;
+    border-color: #00fae6;
+    transition: all 0.4s ease;
+}
+
+.menu #projects {
+    background-image: url("images/coding\ experience.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 35px;
+    animation: fadeIn 4s;
+    transition: all 0.4s ease;
+    border-left: 0px solid #ffffff00;
+}
+
+.menu #projects:hover
+{
+    border-width: 2px;
+    border-color: #00fae6;
+    transition: all 0.4s ease;
+}
+.menu #awards {
+    background-image: url("images/awards.jpg");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    animation: fadeIn 4s;
+    transition: all 0.4s ease;
+    border-left: 0px solid #ffffff00;
+}
+
+.menu #awards:hover
+{
+    border-width: 2px;
+    border-color: #00fae6;
+    transition: all 0.4s ease;
+}
+
+.menu #back {
+    background-image: url("images/backarrow.jpg");
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    animation: fadeIn 4s;
+    padding-left: 5px;
+    transition: all 0.4s ease;
+    border-left: 0px solid #ffffff00;
+}
+
+.menu #back:hover
+{
+    border-width: 2px;
+    border-color: #00fae6;
+    transition: all 0.4s ease;
 }
