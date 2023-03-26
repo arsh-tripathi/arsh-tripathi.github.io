@@ -53,6 +53,15 @@ header
     border-radius: 2px;
   }
 
+#profile {
+    background-image: url(images/IMG_20220423_073143.jpg.png);
+    width: 550px;
+    height: 500px;
+    position: absolute;
+    left: 600px;
+    top: 50px;
+    animation: fadeIntext 0.4s;
+  }
 /* 
 ------------------------------------------------------------------------------------
 Side Bar Content 
