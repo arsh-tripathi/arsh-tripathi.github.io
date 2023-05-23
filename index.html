@@ -4,30 +4,148 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Arsh Tripathi</title>
+    <title>Document</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header>
-      <div class="nav-bar">
-        <ul class="menu">
-          <a href="resume.html"><li id="profile"></li></a>
-          <a href="mailto:arsht2004@gmail.com" target="_blank"><li id="mail"></li></a>
-          <a href="https://github.com/arsh-tripathi" target="_blank"><li id="github"></li></a>
-          <a href="https://linkedin.com/in/arsh-tripathi-34317a24a/" target="_blank"><li id="linkedin"></li></a>
-        </ul>
+    <h1 id="compass"></h1>
+    <a id="up_button" onclick="scrollUp()"></a>
+    <a type="button" id="down_button" onclick="scrollDown()"></a>
+    <header id="about_me">
+      <p id="about_me_p">Hi, my name is</p>
+      <h2 id="about_me_h2">Arsh Tripathi</h2>
+      <p id="about_me_p_2">
+        I am a 2nd year Computer Science student currently studying <br />
+        at the University of Waterloo, who loves solving problems and believes
+        coding <br />
+        is one of the best ways to tackle these challenges. I hope to learn more
+        about<br />
+        the vast field of software development and wish to use it to solve real
+        world problems.
+      </p>
+    </header>
+    <header id="education">
+      <div id="UW_logo" onclick="cycleThroughUw()"></div>
+      <div id="UW_basic_info" onclick="cycleThroughUw()">
+        <br />
+        <b>Degree: <br /></b>
+        Bachelor's in Computer Science <br /><br />
+        <b>Offered by: <br /></b>
+        University of Waterloo, Waterloo, Canada<br /><br />
+        <b>Expected Graduation: <br /></b>
+        April, 2027 <br />
       </div>
-      <div class="welcome_text">
-        <h2>Hi, my name is</h2>
-        <h1>Arsh Tripathi.</h1>
-        <h2>I am a 1st Year Computer Science student currently studying </h2>
-        <h2>at the University of
-          Waterloo, who love solving problems and believes coding </h2>
-        <h2>is one of the best ways to tackle
-          these challenges. I hope to learn more about</h2>
-        <h2> the vast field of software development and wish to use
-          it to solve real world problems.</h2>
+      <div id="UW_GPA" onclick="cycleThroughUw()">
+        <br />
+        <b>Cummulative Average (CAV): <br /><br /></b>
+        &nbsp 90.9%<br /><br />
+        <b>Math/Faculty Average (MAV): <br /><br /></b>
+        &nbsp 94.3%
+      </div>
+      <div id="UW_Courses" onclick="cycleThroughUw()">
+        <br />
+        <b>Courses: <br /> <br /></b>  
+        Designing Function Programs <br /><br />
+        Elementary Algorithm Design and Data Abstraction <br /><br />
+        Tools and Technology for Software Development
+      </div>
+      <div id="UW_Awards" onclick="cycleThroughUw()">
+        <br />
+        <b>Awards: <br /><br /></b>
+        President's Scholarship of Distinction <br /><br />
+        International Scholarhip of Excellence India
+      </div>
+      <div id="DPS_logo" onclick="cycleThroughDps()"></div>
+      <div id="DPS_basic_info" onclick="cycleThroughDps()">
+        <br />
+        <b>Degree: <br /></b>
+        Highschool <br /><br />
+        <b>Offered by: <br /></b>
+        Deplhi Public School Surat, Surat, India<br /><br />
+        <b>Graduation: <br /></b>
+        April, 2022 <br />
+      </div>
+      <div id="DPS_GPA" onclick="cycleThroughDps()">
+        <br />
+        <b>Cummulative Average (CAV): <br /><br /></b>
+        &nbsp 97.2%<br /><br />
+      </div>
+      <div id="DPS_Awards" onclick="cycleThroughDps()">
+        <br />
+        <b>Awards: <br /><br /></b>
+        School Topper Science Stream <br /><br />
+        Nalanda Scholarhip for Excellent Performance
       </div>
     </header>
+    <header id="projects">
+      <a href="https://github.com/arsh-tripathi/Minesweeper">
+        <div id="Minesweeper"></div>
+      </a>
+      <a href="https://github.com/arsh-tripathi/Cows-and-bulls-game">
+        <div id="CB_Game"></div>
+      </a>
+      <a href="index2.html">
+        <div id="Site"></div>
+      </a>
+    </header>
+    <header id="experience">
+      <div id="SC_logo" onclick="cycleThroughSc()"></div>
+      <div id="SC_Basic_Info" onclick="cycleThroughSc()">
+        <br />
+        <b>Company:<br /></b>
+        Delhi Public School Surat<br /><br />
+        <b>Location:<br /></b>
+        Surat, India<br /><br />
+        <b>Duration:<br /></b>
+        April 2021 - April 2022
+      </div>
+      <div id="SC_Responsibilities" onclick="cycleThroughSc()">
+        <br />
+        Represented student’s opinions in major decisions, ensured consideration of relevant and important opinions<br /><br />
+        Relayed information from the school to students and vice‑versa
+      </div>
+      <div id="SC_Responsibilities_2" onclick="cycleThroughSc()">
+        <br />
+        Ensured proper implementation of school’s guidelines and rules and enforced student discipline<br /><br />
+        Soft Skills: Teamwork, Time Management, Communication.
+      </div>
+    </header>
+    <header id="achievements">
+      <div id="JEE_logo" onclick="cycleThroughJee()"></div>
+      <div id="JEE_Summary" onclick="cycleThroughJee()">
+        <br />
+        <b>Location:<br /></b>
+        India<br />
+        <b>Year:<br /></b> 
+        2022<br /><br />
+        Achieved All India Rank of 1331 out of 905,590
+      </div>
+      <div id="KVPY_logo" onclick="cycleThroughKvpy()"></div>
+      <div id="KVPY_Summary" onclick="cycleThroughKvpy()">
+        <br />
+        <b>Location:<br /></b>
+        India<br />
+        <b>Year:<br /></b> 
+        2022<br /><br />
+        Achieved All India Rank of 1266<br />
+        Eligible for scholarship
+      </div>
+      <div id="CSMC_logo" onclick="cycleThroughCsmc()"></div>
+      <div id="CSMC_Summary" onclick="cycleThroughCsmc()">
+        <br />
+        <b>Location:<br /></b>
+        India<br />
+        <b>Year:<br /></b> 
+        2021<br /><br />
+        Appeared on Honour Roll
+      </div>
+    </header>
+    <header id="contact_me">
+      <div id="profile"></div>
+      <a href="mailto:arsht2004@gmail.com"><div id="email"></div></a>
+      <a href="https://github.com/arsh-tripathi"><div id="github"></div></a>
+      <a href="https://linkedin.com/in/arsh-tripathi-34317a24a/"><div id="linkedin"></div></a>
+    </header>
+    <script src="scroll.js"></script>
   </body>
 </html>
