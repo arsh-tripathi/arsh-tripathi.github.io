@@ -609,7 +609,7 @@ Adding Compass Transitions and Positioning
     width: 100vh;
     height: 100vh;
     position: fixed;
-    right: 1100px;
+    right: 85%;
     background-size: contain;
     rotate: -180deg;
 }
