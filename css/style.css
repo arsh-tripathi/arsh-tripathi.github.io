@@ -300,9 +300,8 @@ a {
         overflow-x: hidden;
     }
     body {
-        /* margin: 0 0 0 0; */
-        /* padding: 0 0 0 0; */
-        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
         overflow-y: visible;
         overflow-x: hidden;
     }
@@ -312,7 +311,7 @@ a {
     h2 {
         width: 100%;
         right: 2%;
-        font-size: 6vh;
+        font-size: 12vw;
         text-align: center;
     }
     .header {
@@ -320,7 +319,7 @@ a {
         width: 100%;
         text-align: center;
         right: 0%;
-        font-size: 14.5vh;
+        font-size: 25vw;
         top: 50%;
         transform: translate(0,-60%);
     }
@@ -330,12 +329,12 @@ a {
         display: none;
     }
     .content {
-        height: 90vw;
+        height: 50vh;
         width: 90vw;
         border-radius: 9vw;
         transform: translate(-50%, 0);
     }
-    .content_text {font-size: 2.5vh;}
+    .content_text {font-size: 4vw;}
     .counter {font-size: 2.5vh;}
     .hexagon {
         width: 80vw;
