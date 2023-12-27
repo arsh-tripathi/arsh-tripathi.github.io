@@ -19,7 +19,9 @@ body {
     position: absolute;
     font-family: 'Oswald';
     font-size: 11vw;
-    font-size: 875%;
+    top: 20%; 
+    width: 50%; 
+    text-align: right;
     line-height: 100%;
     color: black;
     -webkit-text-stroke-color: transparent;
@@ -36,7 +38,8 @@ h2 {
     font-family: 'Oswald';
     color: rgb(189, 189, 189);
     font-size: 2vw;
-    font-size: 160%;
+    width: 50%; 
+    text-align: right;
 }
 
 h1 {
@@ -220,32 +223,6 @@ a {
     opacity: 100%;
 }
 
-/* .navbar {
-    list-style: none;
-    position: fixed;
-    height: fit-content;
-    width: 12vw;
-    top: 50%;
-    right: 0;
-    margin: 0 0 0 0;
-    padding: 0% 0% 0% 0%;
-    margin: 0 0 0 0;
-    transform: translate(0, -50%);
-    background-color: black;
-    bottom: 0;
-    z-index: 100;
-}
-
-.navbar li {
-    margin: 25% 5% 25% 5%;
-    padding: 25% 5% 25% 5%;
-    font-family: 'Oswald';
-    height: 6vh;
-    color: white;
-    font-size: 4vh;
-    text-align: center;
-}  */
-
 .back_button {
     display: none;
     position: fixed;
@@ -262,6 +239,27 @@ a {
     display: block;
     animation: vis 2s ease-in-out;
 }
+
+#about_me_hex {top: 150%; left: 1%;}
+#work_hex {top: 250%; left: 1%;}
+#projects_hex {top: 350%; left: 1%;}
+#working_on_hex {top: 450%; left: 1%;}
+#contact_me_hex {top: 550%; left: 1%;}
+
+#about_me_content {top: 150%; left: 40%;}
+#work_content {top: 250%; left: 40%;}
+#projects_content {top: 350%; left: 40%;}
+#working_on_content {top: 450%; left: 40%;}
+
+.contact {
+    display: block;
+    position: absolute;
+    transform: translate(0, -50%);
+}
+
+#mail {top: 550%; left: 40%;}
+#github {top: 552%; left: 60%;}
+#linkedin {top: 550%; left: 80%;}
 
 @keyframes vis {
     from {
@@ -288,7 +286,77 @@ a {
 }
 
 @media only screen and (max-width: 500px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        /* margin: 0 0 0 0; */
+        /* padding: 0 0 0 0; */
+        width: 100%;
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
     .image {
         display: none;
     }
+    h2 {
+        width: 100%;
+        right: 2%;
+        font-size: 6vh;
+        text-align: center;
+    }
+    .header {
+        display: block;
+        width: 100%;
+        text-align: center;
+        right: 0%;
+        font-size: 14.5vh;
+        top: 50%;
+        transform: translate(0,-60%);
+    }
+    #instruction {display: none;}
+    #bck_btn {display: none;}
+    .visible {
+        display: none;
+    }
+    .content {
+        height: 90vw;
+        width: 90vw;
+        border-radius: 9vw;
+        transform: translate(-50%, 0);
+    }
+    .content_text {font-size: 2.5vh;}
+    .counter {font-size: 2.5vh;}
+    .hexagon {
+        width: 80vw;
+        height: auto;
+        transform: translate(-50%, 0);
+    }
+    .animated {
+        animation: none;
+    }
+    .animationadded {
+        animation: none;
+    }
+    #about_me_hex { top: 100%; left: 50%;}
+    #work_hex { top: 200%; left: 50%;}
+    #projects_hex { top: 300%; left: 50%;}
+    #working_on_hex { top: 400%; left: 50%;}
+    #contact_me_hex { top: 500%; left: 50%;}
+
+    #about_me_content {top: 145%; left: 50%;}
+    #work_content {top: 245%; left: 50%;}
+    #projects_content {top: 345%; left: 50%;}
+    #working_on_content {top: 445%; left: 50%;}
+    .contact {
+        display: block;
+        position: absolute;
+        transform: translate(0, -50%);
+        width: 26vw;
+        height: auto;
+    }
+    
+    #mail {top: 570%; left: 5%;}
+    #github {top: 570%; left: 38%;}
+    #linkedin {top: 570%; left: 70%;}
 }
