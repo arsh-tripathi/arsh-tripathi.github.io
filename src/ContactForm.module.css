@@ -1,0 +1,56 @@
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 40vw;
+}
+
+.form input {
+    min-height: 5vh;
+    margin: 2vh;
+    padding: 1vh;
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    border-radius: 2vh;
+    font-family: 'Latex Mono', sans-serif;
+    font-size: 1rem;
+}
+
+.form textarea {
+    min-height: 15vh;
+    margin: 2vh;
+    padding: 1vh;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    border-radius: 2vh;
+}
+
+.form button {
+    margin: 2vh;
+    padding: 1vh;
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    border-radius: 2vh;
+}
+
+.center {
+    position: relative;
+    padding: 1vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: fit-content;
+    user-select: none;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Typewriter';
+    src: url('./assets/fonts/veteran_typewriter.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Latex Mono';
+    src:
+        url('./assets/fonts/lmmono8-regular.otf') format("opentype"),
+        url('./assets/fonts/lmmono9-regular.otf') format("opentype"),
+        url("./assets/fonts/lmmono10-regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}

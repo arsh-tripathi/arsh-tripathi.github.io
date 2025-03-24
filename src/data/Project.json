@@ -1,0 +1,64 @@
+[
+    {
+      "title": "CourseQuest",
+      "link": "https://github.com/arsh-tripathi/CourseQuest",
+      "imagePath": "src/assets/images/CourseQuest.svg",
+      "technologies": [
+        "Kotlin", "Gradle", "Compose"
+      ],
+      "startDate": "Sep 2024",
+      "endDate": "Dec 2024",
+      "description": [
+        "Participated in a course group project, creating a Course planner focussed to solve the needs of CS Students",
+        "Created the app using SOLID principles in Kotlin for Microsoft Windows, complete with installer, testing and functional build system",
+        "Enabled fetching available course information from within the app utilizing the University's API",
+        "Added pre requisite verification for courses to help users ensure that they meet the requirements",
+        "Added a feature for users to sign up and back up their data on the cloud, complete with password recovery"
+      ]
+    },
+    {
+      "title": "CHIP-8 Emulator",
+      "link": "https://github.com/arsh-tripathi/CHIP8",
+      "imagePath": "src/assets/images/CHIP8IBM.svg",
+      "technologies": [
+        "C++", "SDL2"
+      ],
+      "startDate": "Jan 2024",
+      "endDate": "Jan 2024",
+      "description": [
+        "Made a CHIP-8 Emulator using C++, complete with graphics and input handling",
+        "Utilized SDL2 library for graphics, supported all 36 instructions in the set",
+        "Achieved fast loadup times with smooth performance"
+      ]
+    },
+    {
+      "title": "Chess",
+      "link": "https://github.com/arsh-tripathi/CS246Chess",
+      "imagePath": "src/assets/images/Chess.svg",
+      "technologies": [
+        "C++", "X11"
+      ],
+      "startDate": "Nov 2023",
+      "endDate": "Dec 2023",
+      "description": [
+        "Collaborated with two groupmates to make a Chess game in C++",
+        "Used OOP principles and utilized X11 library for graphics",
+        "Implemented different AI bots with varying difficulty levels, using MinMax and MaxMin algorithms, along with alpha-beta pruning to improve performance"
+      ]
+    },
+    {
+      "title": "Image to ASCII Converter",
+      "link": "https://github.com/arsh-tripathi/ImgToASCII",
+      "imagePath": "src/assets/images/ImgToASCII.png",
+      "technologies": [
+        "C++", "X11"
+      ],
+      "startDate": "Nov 2023",
+      "endDate": "Dec 2023",
+      "description": [
+        "Used stb library in C to make an image to ASCII converter",
+        "Added features like inversion, reduced runtie to O(n)"
+      ]
+    }
+
+]

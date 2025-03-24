@@ -1,0 +1,46 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    background: #1a1a1a;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 10vmax;
+}
+
+.text h2 {
+    font-size: 3vmax;
+}
+
+.text h3 {
+    font-size: 1.3vmax;
+}
+
+.typing {
+    display: inline-block;
+}
+
+.typing h1 {
+    display: inline;
+}
+
+.cursor {
+    display: inline;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}

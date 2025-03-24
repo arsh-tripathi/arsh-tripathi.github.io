@@ -1,0 +1,91 @@
+.page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    color: #1a1a1a;
+    z-index: 0;
+}
+
+.scrollable {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 60vw;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.experienceContainer {
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+    z-index: 10;
+    box-shadow: 0 0 15px #9f73fd;
+    width: fit-content;
+}
+
+.description {
+    color: #611bf8;
+    list-style-position: inside;
+    width: 40vw;
+}
+
+.title {
+    background-color: #9f73fd;
+    color: white;
+    width: fit-content;
+    padding: 5px;
+}
+
+.title a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from parent element */
+}
+
+.Row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.Column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.center {
+    position: relative;
+    padding: 1vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: fit-content;
+    user-select: none;
+}
+
+.pageCenter {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+}
+
+.pageCenter p {
+    font-size: 1.5vmax;
+    line-height: 125%;
+}
+
+.pageCenter b {
+    background-color: black;
+    color: white;
+}

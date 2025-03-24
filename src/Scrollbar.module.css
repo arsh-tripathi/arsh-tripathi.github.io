@@ -1,0 +1,25 @@
+.scrollContainer {
+    user-select: none;
+    overflow: visible;
+}
+
+.scrollTrack {
+    width: 5px;
+    position: absolute;
+    top: 5%;
+    right: 70px;
+    height: 90%;
+    background-color: #d5d5d5;
+}
+
+.scrollButton {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #9f73fd;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    transform: translateX(-50%);
+}

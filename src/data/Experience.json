@@ -1,0 +1,53 @@
+[
+    {
+      "title": "Assistant Engineer, Intern",
+      "company": "Huawei",
+      "imagePath": "src/assets/images/Huawei-Vertical-Logo.svg",
+      "startDate": "Jan 2025",
+      "endDate": "Apr 2025",
+      "description": [
+        "Worked in creating a GLSL like shader language that can be compiled with clang",
+        "Worked in the frontend to get syntactical recognition for language features",
+        "Wrote LLVM IR passes using the new LLVM Pass Manager to enable transformation",
+        "Targeted SPIR-V to enable cross-platform support"
+      ]
+    },
+    {
+      "title": "Research Assistant, Software Developer",
+      "company": "ArGan's Lab (University of Waterloo)",
+      "imagePath": "src/assets/images/University_of_Waterloo_seal.svg",
+      "startDate": "Apr 2024",
+      "endDate": "Sep 2024",
+      "description": [
+        "Created a molecule visualization application using C++ with Qt",
+        "Designed and implement intuituve UI for handling molecule visualizations",
+        "Created a plugin integration interface to enable running python based scripts from within the program",
+        "Handled visualizations using OpenGL enabling super fast rendering of molecules, with dynamic visualization enabled"
+      ]
+    },
+    {
+      "title": "Peer Pair Mentor",
+      "company": "University of Waterloo",
+      "imagePath": "src/assets/images/University_of_Waterloo_seal.svg",
+      "startDate": "Jan 2024",
+      "endDate": "Apr 2024",
+      "description": [
+          "Took part in peer pair programme organised by the University",
+          "Helped a 1st year student in acheiving academic and overall success",
+          "Provided appropriate information and redirection to proper resources"
+      ]
+    },
+    {
+      "title": "WE Accelerate AI Stream",
+      "company": "Microsoft (with University of Waterloo)",
+      "imagePath": "src/assets/images/Microsoft_logo.svg",
+      "startDate": "May 2023",
+      "endDate": "Aug 2023",
+      "description": [
+        "Learned about AI systems and common ML algorithms, along with information about Azure Web services",
+        "Attained the AZ-900 and AI-900 certifications by passing relevant examinations",
+        "Coordinated with a group to complete a medical research assistant proposal project utilising Azure AI"
+      ]
+    }
+
+]

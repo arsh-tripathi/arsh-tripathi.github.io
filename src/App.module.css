@@ -1,0 +1,19 @@
+#root {
+  max-width: 1280px;
+  margin: 0 0 0 0;
+  /*padding: 2rem;*/
+  text-align: center;
+  width: 100%;
+  background-color: red;
+}
+
+.scrollContainer {
+  max-width: 1280px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  text-align: center;
+  width: 100%;
+  overflow: scroll;
+  background-color: red;
+  scroll-snap-type: y mandatory;
+}
