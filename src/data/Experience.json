@@ -2,7 +2,7 @@
     {
       "title": "Assistant Engineer, Intern",
       "company": "Huawei",
-      "imagePath": "public/images/Huawei-Vertical-Logo.svg",
+      "imagePath": "/images/Huawei-Vertical-Logo.svg",
       "startDate": "Jan 2025",
       "endDate": "Apr 2025",
       "description": [
@@ -15,7 +15,7 @@
     {
       "title": "Research Assistant, Software Developer",
       "company": "ArGan's Lab (University of Waterloo)",
-      "imagePath": "public/images/University_of_Waterloo_seal.svg",
+      "imagePath": "/images/University_of_Waterloo_seal.svg",
       "startDate": "Apr 2024",
       "endDate": "Sep 2024",
       "description": [
@@ -28,7 +28,7 @@
     {
       "title": "Peer Pair Mentor",
       "company": "University of Waterloo",
-      "imagePath": "public/images/University_of_Waterloo_seal.svg",
+      "imagePath": "/images/University_of_Waterloo_seal.svg",
       "startDate": "Jan 2024",
       "endDate": "Apr 2024",
       "description": [
@@ -40,7 +40,7 @@
     {
       "title": "WE Accelerate AI Stream",
       "company": "Microsoft (with University of Waterloo)",
-      "imagePath": "public/images/Microsoft_logo.svg",
+      "imagePath": "/images/Microsoft_logo.svg",
       "startDate": "May 2023",
       "endDate": "Aug 2023",
       "description": [
