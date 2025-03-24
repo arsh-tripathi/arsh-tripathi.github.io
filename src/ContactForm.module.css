@@ -4,7 +4,7 @@
     flex-direction: column;
     left: 50%;
     transform: translate(-50%, 0%);
-    width: 40vw;
+    width: 40vmax;
 }
 
 .form input {

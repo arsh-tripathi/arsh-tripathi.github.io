@@ -73,45 +73,11 @@ function App() {
                 }
             }
         }
-        const handleTouchStart = (event) => {
-            event.preventDefault()
-            if (locked) return
-            setLock(true)
-            setTouchStartY(event.touches[0].clientY)
-        }
-        const handleTouchEnd = (event) => {
-            event.preventDefault()
-            const deltaY = touchStartY - event.touches[0].clientY
-            if (deltaY > 50) {
-                if (currPage < numPages - 1) {
-                    scrollTo(refs[currPage + 1], currPage + 1)
-                    setPage(currPage + 1)
-                    setTimeout(() => {setLock(false)}, downTime)
-                } else {
-                    setLock(false)
-                }
-            } else if (deltaY < -50) {
-                if (currPage > 0) {
-                    scrollTo(refs[currPage - 1], currPage - 1)
-                    setPage(currPage - 1)
-                    setTimeout(() => {setLock(false)}, downTime)
-                } else {
-                    setLock(false)
-                }
-            }
-        }
-        const handleTouchMove = (event) => {event.preventDefault()}
         window.addEventListener("wheel", handleScroll, {passive: false})
         window.addEventListener("keydown", disableKeyScroll)
-        window.addEventListener("touchstart", handleTouchStart)
-        window.addEventListener("touchend", handleTouchEnd)
-        window.addEventListener("touchmove", handleTouchMove)
         return () => {
             window.removeEventListener("wheel", handleScroll)
             window.removeEventListener("keydown", disableKeyScroll)
-            window.removeEventListener("touchstart", handleTouchStart)
-            window.removeEventListener("touchend", handleTouchEnd)
-            window.removeEventListener("touchmove", handleTouchMove)
         }
     }, [currPage, locked, refs]);
 
