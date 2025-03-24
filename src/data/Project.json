@@ -2,7 +2,7 @@
     {
       "title": "CourseQuest",
       "link": "https://github.com/arsh-tripathi/CourseQuest",
-      "imagePath": "src/assets/images/CourseQuest.svg",
+      "imagePath": "public/images/CourseQuest.svg",
       "technologies": [
         "Kotlin", "Gradle", "Compose"
       ],
@@ -19,7 +19,7 @@
     {
       "title": "CHIP-8 Emulator",
       "link": "https://github.com/arsh-tripathi/CHIP8",
-      "imagePath": "src/assets/images/CHIP8IBM.svg",
+      "imagePath": "public/images/CHIP8IBM.svg",
       "technologies": [
         "C++", "SDL2"
       ],
@@ -34,7 +34,7 @@
     {
       "title": "Chess",
       "link": "https://github.com/arsh-tripathi/CS246Chess",
-      "imagePath": "src/assets/images/Chess.svg",
+      "imagePath": "public/images/Chess.svg",
       "technologies": [
         "C++", "X11"
       ],
@@ -49,7 +49,7 @@
     {
       "title": "Image to ASCII Converter",
       "link": "https://github.com/arsh-tripathi/ImgToASCII",
-      "imagePath": "src/assets/images/ImgToASCII.png",
+      "imagePath": "public/images/ImgToASCII.png",
       "technologies": [
         "C++", "X11"
       ],
