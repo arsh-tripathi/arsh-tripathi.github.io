@@ -60,7 +60,7 @@ const ContactPage = React.forwardRef( (props, ref) => {
             <div className={formStyles.container}>
                 <h2 className={styles.center}>Reach me here</h2>
                 <div className={styles.center}>
-                    <Row gap={String(space) + "vw"}>
+                    <Row gap={(window.innerWidth > 768) ? String(space) + "vw" : "10vw"}>
                         {links.map((link) => (
                             <h2><a href={link.link} target="_blank">{link.name}</a></h2>
                         ))}

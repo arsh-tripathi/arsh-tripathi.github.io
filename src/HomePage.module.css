@@ -36,6 +36,20 @@
     animation: blink 1s infinite;
 }
 
+@media (max-width: 768px) {
+    .text h2 {
+        font-size: 12vw;
+    }
+
+    .text h3 {
+        font-size: 4vw;
+    }
+
+    .typing h1 {
+        font-size: 10vw;
+    }
+}
+
 @keyframes blink {
     0%, 100% {
         opacity: 1;

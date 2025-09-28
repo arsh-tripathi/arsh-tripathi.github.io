@@ -6,7 +6,7 @@ import morseify from "./morse.jsx";
 // @param
 function NavBarItem({index, setIndex, label, currIndex}) {
     const toggle = () => { setIndex(index) }
-    return <button className={(index === currIndex) ? styles.selected: styles.unselected} onClick={toggle}>{label}</button>
+    return <button className={(index === currIndex && window.innerWidth > 768) ? styles.selected: styles.unselected} onClick={toggle}>{label}</button>
 }
 
 function NavBar({index, refs, setIndex}) {
@@ -29,7 +29,7 @@ function NavBar({index, refs, setIndex}) {
         <div style={{zIndex: 5}}>
             <button className={styles.home} onClick={() => goTo(0)}>{morseify("Arsh", "A2M")}</button>
             <div className={styles.bar}>
-                <div className={(currentIndex === 0) ? styles.unStyleBar : styles.styleBar}></div>
+                <div className={(currentIndex === 0 || window.innerWidth <= 768) ? styles.unStyleBar : styles.styleBar}></div>
                 <ul className={styles.navBarList}>
                     {tabs.map((tab, i) => (
                         <li><NavBarItem index={i+1} setIndex={goTo} label={tab} currIndex={currentIndex}/></li>

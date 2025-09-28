@@ -54,6 +54,7 @@
 .Row {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -88,4 +89,21 @@
 .pageCenter b {
     background-color: black;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .experienceContainer {
+        border-radius: 10px;
+    }
+
+    .scrollable {
+        width: 80vw;
+        /* overflow-x: hidden; */
+    }
+    .title {
+        font-size: 1.2em;
+    }
+    .description {
+        width: 100%;
+    }
 }

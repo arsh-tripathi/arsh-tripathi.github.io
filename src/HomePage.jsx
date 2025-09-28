@@ -4,7 +4,7 @@ import styles from "./HomePage.module.css";
 import ExperienceObj from "./data/Experience.json"
 
 const TypingAnimation = () => {
-    const texts = ["Arsh", morseify("Arsh", "A2M")]
+    const texts = ["Arsh", morseify("Arsh", "A2M").trim()]
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const [currentCharIndex, setCurrentCharIndex] = useState(0);
     const [isDeleting, setDeleting] = useState(false)

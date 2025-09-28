@@ -6,18 +6,35 @@ import React from "react";
 import ExperienceObj from "./data/Experience.json"
 
 function Experience({experience})  {
-    return (
-        <div className={styles.experienceContainer}>
-            <Row>
-                <CompanyLogo logoPath={experience.imagePath}/>
+    if (window.innerWidth <= 768) {
+        return (
+            <div className={styles.experienceContainer}>
                 <Column>
-                    <JobTitle title={experience.title} company={experience.company}/>
+                    <Row>
+                        <CompanyLogo logoPath={experience.imagePath}/>
+                        <Column>
+                            <JobTitle title={experience.title} company={experience.company}/>
+                        </Column>
+                    </Row>
                     <Duration startDate={experience.startDate} endDate={experience.endDate}/>
                     <Description description={experience.description}/>
                 </Column>
-            </Row>
-        </div>
-    )
+            </div>
+        )
+    } else {
+        return (
+            <div className={styles.experienceContainer}>
+                <Row>
+                    <CompanyLogo logoPath={experience.imagePath}/>
+                    <Column>
+                        <JobTitle title={experience.title} company={experience.company}/>
+                        <Duration startDate={experience.startDate} endDate={experience.endDate}/>
+                        <Description description={experience.description}/>
+                    </Column>
+                </Row>
+            </div>
+        )
+    }
 }
 
 function CompanyLogo({logoPath}) {

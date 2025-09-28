@@ -1,5 +1,15 @@
 [
     {
+        "title": "Software Developer Intern",
+        "company": "Ford",
+        "imagePath": "/images/Ford_logo.svg",
+        "startDate": "Sep 2025",
+        "endDate": "Dec 2025",
+        "description": [
+            "Working on a major version catchup on a library dependency, 1.9.x →1.40.x, and consolidated code and build changes"
+        ]
+    },
+    {
       "title": "Assistant Engineer, Intern",
       "company": "Huawei",
       "imagePath": "/images/Huawei-Vertical-Logo.svg",

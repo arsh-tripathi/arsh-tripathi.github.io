@@ -6,18 +6,36 @@ import Column from "./Column.jsx";
 import React from "react";
 
 function Project({project})  {
-    return (
-        <div className={styles.experienceContainer}  style={{boxShadow: "0 0 15px #fd459d"}}>
-            <Row>
-                <ProjectLogo logoPath={project.imagePath} link={project.link}/>
+    if (window.innerWidth <= 768) {
+        return (
+            <div className={styles.experienceContainer}  style={{boxShadow: "0 0 15px #fd459d"}}>
                 <Column>
-                    <ProjectTitle title={project.title} technologies={project.technologies} link={project.link}/>
+                    <Row>
+                        <ProjectLogo logoPath={project.imagePath} link={project.link}/>
+                        <Column>
+                            <ProjectTitle title={project.title} technologies={project.technologies} link={project.link}/>
+                        </Column>
+                    </Row>
                     <Duration startDate={project.startDate} endDate={project.endDate}/>
                     <Description description={project.description}/>
                 </Column>
-            </Row>
-        </div>
-    )
+            </div>
+        )
+    } else {
+        return (
+            <div className={styles.experienceContainer}  style={{boxShadow: "0 0 15px #fd459d"}}>
+                <Row>
+                    <ProjectLogo logoPath={project.imagePath} link={project.link}/>
+                    <Column>
+                        <ProjectTitle title={project.title} technologies={project.technologies} link={project.link}/>
+                        <Duration startDate={project.startDate} endDate={project.endDate}/>
+                        <Description description={project.description}/>
+                    </Column>
+                </Row>
+            </div>
+        )
+    }
+    
 }
 
 function ProjectLogo({logoPath, link}) {
