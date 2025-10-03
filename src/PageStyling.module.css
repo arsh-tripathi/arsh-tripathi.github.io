@@ -106,4 +106,10 @@
     .description {
         width: 100%;
     }
+    .pageCenter {
+        width: 80vw;
+    }
+    .pageCenter p {
+        font-size: 4.0vw;
+    }
 }

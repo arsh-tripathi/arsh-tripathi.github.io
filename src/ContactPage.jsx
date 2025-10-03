@@ -66,6 +66,8 @@ const ContactPage = React.forwardRef( (props, ref) => {
                         ))}
                     </Row>
                 </div>
+                <h2 className={styles.center}>View my resume</h2>
+                <h2 className={styles.center}><a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></h2>
                 <h2 className={styles.center}>Or send a message</h2>
                 <form ref={form} onSubmit={sendEmail} className={formStyles.form}>
                     <input type="text" name="name" placeholder="Your Name" onChange={handleChange} required={true}/>
