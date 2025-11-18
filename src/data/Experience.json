@@ -6,7 +6,9 @@
         "startDate": "Sep 2025",
         "endDate": "Dec 2025",
         "description": [
-            "Working on a major version catchup on a library dependency, 1.9.x →1.40.x, and consolidated code and build changes"
+            "Executed a major version upgrade for an internal graphics library, from 1.9.x to 1.23.x, and consolidated code and build changes",
+            "Implemented dependency injection pattern to improve code quality and to enable ease of testing",
+            "Created CI pipelines to prematurely detect clang-ridy errors and thread safety issues"
         ]
     },
     {
