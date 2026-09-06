@@ -46,10 +46,11 @@ const ContactPage = React.forwardRef( (props, ref) => {
             publicKey: "pdbnV-pUj465auy4n",
         }).then(
             () => {
-                console.log('SUCCESS')
+                e.target.reset()
+                alert('Message sent successfully, thanks for reaching out :)')
             },
             (error) => {
-                console.log('FAILED: ' + error.text);
+                alert('Message failed to send, sorry for the inconvenience :( [' + error.text + ']');
             }
         )
     }

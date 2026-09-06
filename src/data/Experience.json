@@ -1,5 +1,18 @@
 [
     {
+        "title": "Intern",
+        "company": "Arista Networks",
+        "imagePath": "/images/Arista_networks_logo.svg",
+        "startDate": "May 2026",
+        "endDate": "Dec 2026",
+        "description": [
+            "Implemented 1-step Peer-to-Peer Transparent Clock mechanism for Precision Time Protocol (IEEE 1588)",
+            "Utilized specialized internal language for feature implementation, created documentation for multiple workflows",
+            "Added testing to ensure consistency with the IEEE spec, and refactored to allow for expansion in future projects",
+            "Performed routine bug fixes and found 3 critical bugs, suggested fixes for them as well"
+        ]
+    },
+    {
         "title": "Software Developer Intern",
         "company": "Ford",
         "imagePath": "/images/Ford_logo.svg",

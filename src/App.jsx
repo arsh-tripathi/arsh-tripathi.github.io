@@ -6,15 +6,14 @@ import AboutPage from "./AboutPage.jsx";
 import ExperiencePage from './ExperiencePage.jsx'
 import WorkPage from "./WorkPage.jsx";
 import ContactPage from "./ContactPage.jsx";
-import {useState, useEffect, useMemo, memo} from "react";
-import React from "react"
+import {useRef, useState, useEffect, useMemo, memo} from "react";
 
 function App() {
     const numPages = 5;
     const [currPage, setPage] = useState(0)
     const [touchStartY, setTouchStartY] = useState(0);
     const [locked, setLock] = useState(false)
-    const refs = Array.from({ length: numPages }, () => React.useRef(null));
+    const refs = Array.from({ length: numPages }, () => useRef(null));
     const scrollTo = (ref, index) => {
         if (ref.current) {
             ref.current.scrollIntoView({
@@ -52,32 +51,22 @@ function App() {
             }
         }
         const handleScroll = (event) => {
-            event.preventDefault()
-            if (locked) return
-            setLock(true)
-            if (event.deltaY > 0) {
-                if (currPage < numPages - 1) {
-                    scrollTo(refs[currPage + 1], currPage + 1)
-                    setPage(currPage + 1)
-                    setTimeout(() => {setLock(false)}, downTime)
-                } else {
-                    setLock(false)
-                }
-            } else {
-                if (currPage > 0) {
-                    scrollTo(refs[currPage - 1], currPage - 1)
-                    setPage(currPage - 1)
-                    setTimeout(() => {setLock(false)}, downTime)
-                } else {
-                    setLock(false)
-                }
-            }
+            const scrollY = window.scrollY
+            const vh = window.innerHeight
+            setPage(Math.round(scrollY / vh))
         }
-        window.addEventListener("wheel", handleScroll, {passive: false})
-        window.addEventListener("keydown", disableKeyScroll)
+        handleScroll()
+        document.addEventListener("wheel", handleScroll, {passive: false})
+        document.addEventListener("scroll", handleScroll, {passive: false})
+        document.addEventListener("scrollend", handleScroll, {passive: false})
+        document.addEventListener("touchend", handleScroll, {passive: false})
+        document.addEventListener("keydown", disableKeyScroll)
         return () => {
-            window.removeEventListener("wheel", handleScroll)
-            window.removeEventListener("keydown", disableKeyScroll)
+            document.removeEventListener("wheel", handleScroll)
+            document.removeEventListener("scroll", handleScroll)
+            document.removeEventListener("scrollend", handleScroll)
+            document.removeEventListener("touchend", handleScroll)
+            document.removeEventListener("keydown", disableKeyScroll)
         }
     }, [currPage, locked, refs]);
 

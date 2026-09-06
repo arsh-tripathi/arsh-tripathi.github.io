@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from "./PageStyling.module.css";
-import ScrollableContainer from "./Scrollable.jsx";
 
 const AboutPage = React.forwardRef( (props, ref) => {
         return (

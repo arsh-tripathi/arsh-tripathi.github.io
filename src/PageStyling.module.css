@@ -20,6 +20,13 @@
     align-items: center;
     overflow-y: scroll;
     z-index: 1;
+    scrollbar-width: thin;
+    scrollbar-color: #0e0e0e #ffffff;
+}
+
+.scrollable::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
 }
 
 .experienceContainer {
